@@ -1,0 +1,13 @@
+en:
+  plugins:
+    atom_feed:
+      settings:
+        post_count: Number of posts to include in feed
+        author_name: Author name
+        author_name_hint: For the global author tag, defaults to the site name if left blank here.
+        body_postfix: Content to put after each post in the feed
+        body_postfix_hint: "You may use Markdown here. The {{ post }} and {{ site }} placeholders will generate links to your post and site."
+        favicon_url: Favicon URL
+        teaser_words: Length of teaser to be extracted from body
+        teaser_words_hint: Leave empty or 0 to only render explicitly defined teasers and the full body otherwise.
+

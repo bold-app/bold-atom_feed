@@ -1,0 +1,9 @@
+.row
+  .col-xs-8
+    = f.config_input :post_count, as: :integer, label: t('.post_count')
+    = f.config_input :teaser_words, as: :integer, label: t('.teaser_words'), hint: t('.teaser_words_hint')
+.row
+  .col-xs-12
+    = f.config_input :author_name, as: :string, label: t('.author_name'), hint: t('.author_name_hint')
+    = f.config_input :favicon_url, as: :url, label: t('.favicon_url')
+    = f.config_input :body_postfix, as: :text, label: t('.body_postfix'), hint: t('.body_postfix_hint')
