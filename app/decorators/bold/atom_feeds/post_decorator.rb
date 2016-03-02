@@ -7,16 +7,6 @@ module Bold
       decorates Post
       delegate_all
 
-      class BodyPostfix < Liquid::Drop
-        attr_reader :root_url
-        def initialize(post, root_url)
-          @post = post
-          @root_url = root_url
-        end
-        def self.render(template, post_link, root_link)
-        end
-      end
-
       def body_html
         if word_count > 0 or object.has_teaser?
           object.teaser_html(word_count)
